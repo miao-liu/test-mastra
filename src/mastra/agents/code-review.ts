@@ -1,6 +1,5 @@
 import { deepseek } from '@ai-sdk/deepseek'
 import { Agent } from '@mastra/core'
-import CodeReviewTool from '../tools/code-review'
 export default new Agent({
     name: 'Code Review Agent',
     instructions: `
@@ -9,5 +8,5 @@ export default new Agent({
     use the CodeReviewTool to review the code.
     `,
     model: deepseek('deepseek-chat'),
-    tools: { CodeReviewTool }
+    tools: { }
 })
